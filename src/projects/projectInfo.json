@@ -1,0 +1,23 @@
+[
+    {
+    "projectId":"PrimusBilling-0",
+    "title":"Primus",
+    "projectIntro":"Primus Billing Intro",
+    "repImg":false,
+    "projectDesc":"Primus billing description"
+    },
+    {
+    "projectId":"EpenClass-0",
+    "title":"EpenClass CMS",
+    "projectIntro":"",
+    "repImg":true,
+    "projectDesc":""
+    },
+    {
+    "projectId":"DatapiWeb-0",
+    "title":"Datapi main landing page",
+    "projectIntro":"",
+    "repImg":true,
+    "projectDesc":""
+    } 
+]
