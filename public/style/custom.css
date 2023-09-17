@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato&display=swap');
 
 .App{
     text-align: left !important;
@@ -65,22 +65,13 @@ a.text-lighter:hover{
     background-color: rgba(255,255,255,0.35); 
 }
 .prime-font, h1, h2{
-    font-family: 'Paytone One', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
 }
 .secondary-font, a, p{
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Lato', sans-serif !important;
 }
-.text-silver{
-    background: linear-gradient(0deg, rgba(102,103,102,1) 0%, rgba(97,98,99,1) 24%, rgba(255,255,255,1) 53%, rgba(179,180,183,1) 77%, rgba(115,115,119,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.text-ocean{
-    background: linear-gradient(0deg, rgba(43,56,143,1) 0%, rgba(0,173,238,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- 
+.text-branding {
+    color: #b889d4;
 }
 .font-14pt{
     font-size: 14pt !important;
@@ -123,4 +114,4 @@ a.text-lighter:hover{
     0% {opacity:0}
     50% {opacity:1}
     100% {opacity:0}
-  }
+}

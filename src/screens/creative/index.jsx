@@ -1,7 +1,7 @@
 
 
 
-export default function Design () {
+export default function Creative () {
 
 
     return (
