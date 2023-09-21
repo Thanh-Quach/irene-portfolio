@@ -12,27 +12,29 @@ export default function Home () {
         <div>
             <div
                 className="bg-white row align-items-center justify-content-center"
-                style={{height: "75vh"}}
+                style={{height: "50vh"}}
             >
                 <div className="row justify-content-center">
-                    <Image src="./assets/avatar.png" style={{width:'8%'}}/>
-                    <div className="text-center">
+                    <Image src="./assets/avatar.png" style={{width:'7%', minWidth:'100px'}}/>
+                    <div className="text-center my-4">
                         <h2>Hey! come on in ✨</h2>
                         <h3 className="prime-font">I'm <span className="text-branding">Irene Dinh</span>.</h3>
-                        <p>I’m a passionate UX/UI Designer based in Canada with <br/> specialties in designing human-computer interaction.</p>    
+                        <p  className="mx-auto"
+                            style={{width:'35%'}}
+                        >I’m a passionate UX/UI Designer based in Canada with specialties in designing human-computer interaction.</p>    
                     </div>
                 </div>
             </div>
-            <TextContainer
-                id='featuring'
-            >
-                <div className="row w-75 mx-auto">
+            <TextContainer>
+                <div className="row w-75 mx-auto justify-content-between">
                     {Projects.map((item, index)=>
                         <div
                             key={index}
-                            className="col"
+                            className="col-6 mb-5"
                         >
                             <FeatureCard
+                                className=''
+                                style={{}}
                                 theme='dark'
                                 repImg={item.repImg}
                                 projectId={item.projectId}

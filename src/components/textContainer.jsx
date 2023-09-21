@@ -10,7 +10,7 @@ export default function TextContainer (props) {
     return (
     <div
         id={id}
-        className='bg-black m-0 align-items-center justify-content-center'
+        className='m-0 align-items-center justify-content-center'
         style={{height: '75vh'}}
     >
         {id&&<h1 className='text-white text-center'>{id[0].toUpperCase() +

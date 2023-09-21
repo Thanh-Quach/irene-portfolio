@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function FeatureCard (props) {
     const {
         className,
+        style,
         theme,
         repImg,
         projectId,
@@ -13,7 +14,10 @@ export default function FeatureCard (props) {
     } = props;
 
     return (
-        <div className={'drop-shadow rounded rounded-3 '+(theme==='dark'?'bg-dark text-light ':'bg-light ')+className}>
+        <div 
+            className={'drop-shadow rounded rounded-3 '+(theme==='dark'?'bg-dark text-light ':'bg-light ')+className}
+            style={style}    
+        >
             {repImg?
                 <Image src={'./assets/'+projectId+'/cover.jpg'} className='w-100 rounded-top-3'/>
                 :
