@@ -1,30 +1,30 @@
 [
     {
-    "projectId":"PrimusBilling-0",
-    "title":"Primus",
-    "projectIntro":"Primus Billing Intro",
-    "repImg":false,
-    "projectDesc":"Primus billing description"
+    "projectId":"0-here",
+    "title":"Here",
+    "projectIntro":"This is the Here project intro",
+    "repImg":true,
+    "projectDesc":"This is the Here project description"
     },
     {
-    "projectId":"EpenClass-0",
-    "title":"EpenClass CMS",
-    "projectIntro":"",
+    "projectId":"0-luv-the-grub",
+    "title":"Luv the Grub",
+    "projectIntro":"This is the Luv the Grub project intro",
     "repImg":true,
-    "projectDesc":""
+    "projectDesc":"This is the Luv the Grub project description"
     },
     {
-    "projectId":"DatapiWeb-0",
-    "title":"Datapi main landing page",
-    "projectIntro":"",
+    "projectId":"0-expgo",
+    "title":"ExpGo",
+    "projectIntro":"This is the ExpGo project intro",
     "repImg":true,
-    "projectDesc":""
+    "projectDesc":"This is the ExpGo project description"
     },
     {
-    "projectId":"DatapiWeb-0",
-    "title":"Datapi main landing page",
-    "projectIntro":"",
+    "projectId":"0-pantry-tracker",
+    "title":"Pantry Tracker",
+    "projectIntro":"This is the Pantry Tracker project intro",
     "repImg":true,
-    "projectDesc":""
+    "projectDesc":"This is the Pantry Tracker project description"
     } 
 ]

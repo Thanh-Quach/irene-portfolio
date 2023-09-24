@@ -2,19 +2,16 @@
 
 export default function TextContainer (props) {
     const {
-        id,
+        title,
         substile,
         children
     } = props;
 
     return (
     <div
-        id={id}
-        className='m-0 align-items-center justify-content-center'
-        style={{height: '75vh'}}
+        className='m-0 mb-5 align-items-center justify-content-center'
     >
-        {id&&<h1 className='text-white text-center'>{id[0].toUpperCase() +
-    id.slice(1)}</h1>}
+        {title&&<h2 className='mb-5'>{title}</h2>}
         {substile&&<p className='text-white text-center secondary-font font-16pt'>{substile}</p>}
             {children}
     </div>

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "col":7,
+        "title":"Jordan & the magic cape book",
+        "imgPos":"left",
+        "bgColor":"F0F0F0",
+        "repImgs": [
+            "060-6x9-Book-Boxset-Small-Spine-Mockup-COVERVAULT+3.png",
+            "3434.png",
+            "12+p.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title":"Branding",
+        "col":5,
+        "imgPos":"right",
+        "bgColor":"EFF1FB",
+        "repImgs": [
+            "Frame+15.png"
+        ]
+    },
+    {
+        "id": 3,
+        "title":"Magazines",
+        "col":12,
+        "imgPos":"right",
+        "bgColor":"F0F0F0",
+        "repImgs": [
+            "Frame+160.png"
+        ]
+    }
+]

@@ -9,7 +9,7 @@ export default function Home () {
 
 
     return (
-        <div>
+        <div className="mt-5">
             <div
                 className="bg-white row align-items-center justify-content-center"
                 style={{height: "50vh"}}
@@ -19,18 +19,17 @@ export default function Home () {
                     <div className="text-center my-4">
                         <h2>Hey! come on in ✨</h2>
                         <h3 className="prime-font">I'm <span className="text-branding">Irene Dinh</span>.</h3>
-                        <p  className="mx-auto"
-                            style={{width:'35%'}}
+                        <p  className="mx-auto col-lg-3 col-sm-9"
                         >I’m a passionate UX/UI Designer based in Canada with specialties in designing human-computer interaction.</p>    
                     </div>
                 </div>
             </div>
             <TextContainer>
-                <div className="row w-75 mx-auto justify-content-between">
+                <div className="row col-lg-10 col-sm-11 mx-auto justify-content-between">
                     {Projects.map((item, index)=>
                         <div
                             key={index}
-                            className="col-6 mb-5"
+                            className="mb-5 col-lg-6 col-sm-12 px-5"
                         >
                             <FeatureCard
                                 className=''

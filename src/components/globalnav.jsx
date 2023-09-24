@@ -10,9 +10,10 @@ export default function GlobalNav () {
         <Navbar 
             data-bs-theme="light" 
             fixed="top"
+            className="bg-white"
         >
             <Container
-                className="justify-content-between"    
+                className="justify-content-between py-3"    
             >
                 <Navbar.Brand href="/">
                     <Image src='assets/logo.png' style={{width: '36px'}}/>
@@ -28,7 +29,7 @@ export default function GlobalNav () {
                         <Nav.Link href="/">Work</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="/design">Creative</Nav.Link>
+                        <Nav.Link eventKey="/creative">Creative</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="/about">About</Nav.Link>
