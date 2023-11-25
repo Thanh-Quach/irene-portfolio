@@ -10,9 +10,6 @@ p{
     padding: 0 !important;
     margin: 0 !important;
 }
-li{
-    list-style-type: none;
-}
 #home-header {
     background-image: url(../assets/bg.jpg);
     background-size: cover;

@@ -12,6 +12,9 @@ import Footer from './components/footer';
 import Home from './screens/home';
 import Creative from './screens/creative';
 import About from './screens/about';
+import Project from './screens/project';
+
+import Projects from "./projects/projectInfo.json"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,6 +31,17 @@ function App() {
             <Route path="/" exact element={<Home/>} />
             <Route path="/creative" element={<Creative/>} />
             <Route path="/about" element={<About/>} />
+            {
+              Projects.map((project, index)=>
+                <Route 
+                    key={index}
+                    path={"/"+project.projectId} element={
+                  <Project
+                      projectDetail={project}
+                  />}
+                /> 
+              )
+            }
           </Routes>
         <Footer/>
         </div>

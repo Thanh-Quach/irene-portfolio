@@ -9,6 +9,7 @@ export default function FeatureCard (props) {
         theme,
         repImg,
         projectId,
+        ready,
         projectDesc,
         children,
         title,
@@ -19,9 +20,9 @@ export default function FeatureCard (props) {
     return (
         <div 
             className={'drop-shadow rounded rounded-5 mb-5 overflow-hidden position-relative '+(theme==='dark'?'bg-dark text-light ':'bg-light ')+className}
-            style={style}    
+            style={style} 
             onMouseEnter={()=>{overlay.current.style.opacity = 1}}
-            onMouseLeave={()=>{overlay.current.style.opacity = 0}}
+            onMouseLeave={()=>{overlay.current.style.opacity = ready&&0}}
         >
             {repImg?
                 <div className="w-100">
@@ -33,26 +34,31 @@ export default function FeatureCard (props) {
                 </div>
             }
             <div
-                className="p-3 position-absolute shadow-overlay w-100 h-100 d-flex justify-content-center align-items-center"
-                style={{zIndex:10, top:0, opacity:0, transition:'0.3s ease'}}
+                className="p-5 position-absolute shadow-overlay w-100 h-100 d-flex justify-content-center align-items-center"
+                style={{zIndex:10, top:0, opacity:ready?0:1, transition:'0.3s ease'}}
                 ref={overlay}
 
 
             >
-                <div>
+                {ready?<div>
                     {title&&<h4 className="secondary-font">{title}</h4>}
                     {children&&children}
-                    {projectId&&
-                        <Link to={'/'+projectId+'-demo'}>
+                    {/* {projectId&&
+                        <Link to={'/'+projectId+'-demo'} className="pointer">
                             <Button variant="outline-light">View demo</Button>
                         </Link>
-                    }
+                    } */}
                     {projectDesc&&
                         <Link to={'/'+projectId}>
-                            <Button variant="link" className="link-light">Read more</Button>
+                            <Button variant="outline-light mt-4" className="link-light pointer">Read more</Button>
                         </Link>
                     }
                 </div>
+                :
+                <div>
+                    <h4>Coming soon</h4>
+                </div>
+                }
             </div>
         </div>
     )

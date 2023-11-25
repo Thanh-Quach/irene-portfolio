@@ -33,6 +33,7 @@ export default function Home () {
                         >
                             <FeatureCard
                                 className=''
+                                ready={item.ready}
                                 style={{}}
                                 theme='dark'
                                 repImg={item.repImg}

@@ -2,28 +2,696 @@
     {
     "projectId":"0-here",
     "title":"Here",
-    "projectIntro":"This is the Here project intro",
+    "projectIntro":"Here is a digital solution that helps students to find the ideal roommate based on their shared interests, hobbies, and other personal preferences, thus, enhancing the living experience.",
+    "ready":true,
     "repImg":true,
-    "projectDesc":"This is the Here project description"
+    "showProjectTitle":true,
+    "projectDesc":"This is the Here project description",
+    "projectPage":[
+        {
+            "section":"",
+            "image":"",
+            "children":[
+                {
+                    "title":"Role",
+                    "children":["UX/UI Design"]
+                },
+                {
+                    "title":"Tools",
+                    "children":["Figma"]
+                },
+                {
+                    "title":"Duration",
+                    "children":["10 weeks"]
+                },
+                {
+                    "title":"Platform",
+                    "children":["iOS"]
+                },
+                {
+                    "title":"Project Type",
+                    "children":["Solo"]
+                }
+            ]
+        },
+        {
+            "section":"The Problem",
+            "children":[
+                {
+                    "title":"Roommate search stress gets rising in college students due to compatibility concerns",
+                    "children":["The number of people choosing to live with roommates has increased rapidly, especially among individuals aged 20-34. However, college students are finding it more challenging to find suitable roommates as they heavily depend on online platforms, which can expose them to unreliable and random individuals, causing higher levels of stress."]
+                },
+                {
+                    "icon":null,
+                    "title":"94%",
+                    "style":"card",
+                    "children":["Canadian college students living in shared rented property use online platform to find a roommate"]
+                },
+                {
+                    "icon":null,
+                    "title":"78%",
+                    "style":"card",
+                    "children":["are not satisfied with their roomate arrangement"]
+                }
+            ],
+            "reference":{
+                "title":"Statistics from secondary research",
+                "link":""
+            }
+        },
+        {
+            "section":"The Solution",
+            "children":[
+                {
+                    "title":"Enhance students’ roommate search process experience",
+                    "children":[
+                        {
+                            "prototype":"flow-1.gif",
+                            "title":"Identify the optimal companion",
+                            "children":["“Here” focuses on compatibility by using the matching algorithm from users’ personality and interest input, the app helps students to find the best possible match, who is more likely to get along and has similar living habits."]
+                        },
+                        {
+                            "prototype":"flow-2.gif",
+                            "title":"Enhance the confidence in the choice of roommate",
+                            "children":["To make the process more effective, a messaging system is implemented to allow students to connect with each other. Additionally, “Here” offers icebreaker games that provide various prompts to make conversations more relaxed and encourage individuals to share their interests and hobbies."]
+                        },
+                        {
+                            "prototype":"flow-3.gif",
+                            "title":"Manage room viewings  in a better way",
+                            "children":["The room view scheduling process could be time-consuming. To address this, the app has a scheduling feature located within the chatbox, allowing users to schedule room views directly with their chosen roommate. This helps shorten the process and keep users stay on top of their schedules."]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section":"",
+            "children":[
+                {
+                    "title":"Research objectives",
+                    "children":[
+                        {
+                            "title":"1.",
+                            "style":"inline",
+                            "children":[
+                                "Gain an understanding of the current experience of students searching for roommates, including their pain points, and motivations."
+                            ]
+                        },
+                        {
+                            "title":"2.",
+                            "style":"inline",
+                            "children":[
+                                "Identify the most common sources of stress and anxiety during the roommate search process."
+        
+                            ]
+                        },
+                        {
+                            "title":"3.",
+                            "style":"inline",
+                            "children":[
+                                "Gather insights from students who have been able to find a suitable roommate and determine what factors played a role in their success."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section":"User Interview Insights",
+            "children":[
+                {
+                    "title":"Understanding my users",
+                    "children":["I conducted 3 qualitative user interviews to fully understand how college students feel, their common behaviors, motivations, and what causes the stress of the roommate search process. The participants are those who have experience in finding roommates to share in rented properties."]
+                },
+                {
+                    "image":"affinity-diagram.jpeg",
+                    "title":"\"",
+                    "children":["It's stressful to find a roommate who has similar interests and personalities. I don't want to end up living with someone I can't get along with."]
+                }
+            ]
+        },
+        {
+            "section":"Key Theme",
+            "children":[
+                {
+                    "image":"compatibility.jpeg",
+                    "title":"Compatibility in personality and lifestyles",
+                    "children":[
+                        "By using Affinity Diagram, I defined the key theme around compatibility in personality and lifestyles that is shared by 3 participants and contain the most common pain points. Participants repeatedly highlighted the worry of finding someone who is suitable, and the anxiety that arises from not knowing much about a potential roommate's traits and living styles.",
+                        "During the search for a roommate, people experience anxiety because they are uncertain about the personalities of potential roommates."
+                    ]
+                }
+            ],
+            "reference":{
+                "title":"Synthesized data using Affinity Diagram",
+                "link":"#"
+            }
+        },
+        {
+            "section":"Design Challenge",
+            "children":[
+                {
+                    "title":"How might we make it easier for college-aged students to find ideal roommates so that they can enjoy each other’s company?"
+                }
+            ]
+        },
+        {
+            "section":"Define",
+            "children":[
+                {
+                    "title":"Clarify the functionality of product",
+                    "children":["Considering Alisa’s motivations, pain points, and behaviors, I created a set of 30 user stories and categorized them into epics to help me define the core functionality and feature for the digital solution."]
+                }
+            ]
+        },
+        {
+            "section":"Core Epic",
+            "children":[
+                {
+                    "title":"Find a matching roommate",
+                    "children":[
+                        "As a roommate searcher,",
+                        {
+                            "title":"I want to...",
+                            "children":[
+                                {
+                                "style":"list",
+                                "children":[
+                                    "know what renters' personalities are like",
+                                    "know what their lifestyles and living habits are",
+                                    "get connected closer with potential renters",
+                                    "see who matches my personality the most",
+                                    "know who is looking for a place within my location"
+                                ]
+                                }
+
+                            ]
+                        },
+                        {
+                            "title":"So that...",
+                            "children":[
+                                {
+                                "style":"list",
+                                "children":[
+                                    "I have a better idea about who the individual is",
+                                    "I can evaluate if they match with mine",
+                                    "I have a better understanding of potential renters",
+                                    "I can save time sorting out candidates",
+                                    "I can narrow down the selection of interested individuals"
+                                ]
+                                }
+
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "image":"taskflow-diagram.jpeg",
+                    "title":"Task Flow Diagram",
+                    "children":[
+                        "Once I identified the primary tasks, I created a task flow diagram illustrating the sequence of actions that users will follow to select an appropriate roommate and become familiar with potential candidates prior to scheduling a viewing. This task flow takes into account the way users interact with the digital product."
+                    ]
+                }
+            ]
+        },
+        {
+            "section":"Ideate",
+            "children":[
+                {
+                    "image":"low-fi-mockup.jpeg",
+                    "title":"Communicating my design ideas on paper",
+                    "children":["To kick off the ideation phase, I sketched initial ideas on paper and iterated them to determine the most valuable design approach for users. Using empathy, I identified what roommate searchers expect to see on various pages, such as the exploration, profile view, and chat pages."]
+                }
+            ]
+        },
+        {
+            "section":"Wireframe",
+            "children":[
+                {
+                    "image":"mid-fi-mockup.jpeg",
+                    "title":"Defining elements and visual hierarchy",
+                    "children":["Once I settled down with the products, I created wireframes to help establish the structure of user interface."]
+                }
+            ]
+        },
+        {
+            "section":"Usability Test",
+            "children":[
+                {
+                    "title":"Design the product with users in mind",
+                    "children":["I conducted two rounds of the usability test with 10 testers and gathered valuable feedback to iterate my design. Key takeaways included",
+                    "Testers struggled to initiate roommate searches on the explore page due to insufficient guidance.",
+                    "Users desired a more prominent display of personality and interest information.",
+                    {
+                        "prototype":"usability-test-1.jpeg",
+                        "title":"Provide clear guidance to help users initiate roommate searches.",
+                        "children":[
+                            {
+                                "title":"Users’ Feedback Notes:",
+                                "style":"list",
+                                "children":["Users experienced confusion when attempting to initiate the application."]
+                            },
+                            {
+                                "title":"Revisions:",
+                                "style":"list",
+                                "children":[
+                                    "Adding the title to guide users to navigate the search easier",
+                                    "Adding the location of users",
+                                    "Changing headings to make the page more interactive"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "prototype":"usability-test-2.jpeg",
+                        "title":"Highlight personality and interest information more visibly",
+                        "children":[
+                            {
+                                "title":"Users’ Feedback Notes:",
+                                "style":"list",
+                                "children":["The user’s profile and contents especially personality and interest seem less noticeable."]
+                            },
+                            {
+                                "title":"Revisions:",
+                                "style":"list",
+                                "children":[
+                                    "Adding verification next to the profile’s name to indicate the credibility of users",
+                                    "Personality and interests are displayed in chips",
+                                    "Connect button is enlarged to emphasize the action"
+                                ]
+                            }
+                        ]
+                    }
+                    ]
+                }
+            ]
+        },
+        {   
+            "section":"",
+            "children":
+            [
+            {
+                "title":"What does “Here” stand for?",
+                "children":[
+                    "The word \"here\" has versatile applications in contexts pertaining to finding roommates, such as \"Find your roommate here,\" \"I'm here to view the house,\" \"We become roommates from here,\" and \"Here, we'll share a place together,\" among others."
+                ]
+            }
+            ]
+        },
+        {   
+            "section":"Branding",
+            "children":
+            [
+            {
+                "images":["moodboard.jpeg","logo-dev.jpeg","color-guide.jpeg","font-guide.jpeg"],
+                "carousel":["slide-1","slide-2","slide-3","slide-4"],
+                "title":"Friendly, Welcoming & Engaging",
+                "children":[
+                    "I aim for the brand to evoke friendly, engaging, and welcoming feelings because my primary users are the young generation, who often prefer a more playful and approachable design style. I mainly use warm and bright colors in the branding and visual design to create a sense of joy and delight, while still maintaining a professional and trustworthy image."
+                ]
+            }
+            ]
+        },
+        {
+            "section":"Accessibility",
+            "children":[
+                {
+                    "image":"accessibility-1.jpeg",
+                    "title":"Create an inclusive digital experience",   
+                    "children":["Here ensures that all significant text and descriptions meet the accessibility standards of WCAG level AA, including a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text."]
+                },
+                {
+                    "image":"accessibility-2.jpeg",
+                    "title":"Translation Into Alternate Platform",   
+                    "children":["I developed a web application specifically designed to enhance accessibility and flexibility for college students. The desktop version of the application offers a convenient and efficient experience for students who primarily use desktop devices for multitasking. This is particularly advantageous when searching for roommates, as it allows them to allocate more time and attention to detail-intensive tasks."]
+                }
+            ]
+        },    
+        {  
+            "footer":"Find the ideal roommate for you and your space",
+            "footerImage":"high-fi-mockup.jpeg"
+        }
+    ]
     },
     {
     "projectId":"0-luv-the-grub",
     "title":"Luv the Grub",
     "projectIntro":"This is the Luv the Grub project intro",
+    "ready":true,
     "repImg":true,
-    "projectDesc":"This is the Luv the Grub project description"
+    "projectDesc":"This is the Luv the Grub project description",
+    "showProjectTitle":false,
+    "projectPage":[
+        {
+            "section":"",
+            "children":[
+                {
+                    "title":"Client",
+                    "children":["Luv the Grub"]
+                },
+                {
+                    "title":"Role",
+                    "children":["UX/UI Design","User Research"]
+                },
+                {
+                    "title":"Tools",
+                    "children":["Figma","Miro"]
+
+                },
+                {
+                    "title":"Duration",
+                    "children":["12 weeks"]
+                },
+                {
+                    "title":"Platform",
+                    "children":["Desktop"]
+                }
+            ]
+        },
+        {
+            "section":"The Background",
+            "children":[
+                {
+                    "title":"About Luv the Grub",
+                    "image":"about.jpeg",
+                    "resizeImage":"40%",
+                    "children":["Luv The Grub (LTG) is a Vancouver-based social enterprise that produces tasty chutney from not-so-beautiful produce. The team produces seconds from the garbage and transforms them into chutneys using sustainable ingredients. LTG provides an e-commerce website that engages users through the demand for active and accessible online shopping."]
+                }
+            ]
+        },
+        {
+            "section":"The Problem",
+            "children":[
+                {
+                    "title":"Ineffective content impacting customer engagement and failing to convey purchase benefits.",
+                    "children":[
+                        "Luv the Grub has reached a significant milestone in its sustainability path; However, there are some major challenges that the team is encountering on the website:",
+                        {
+                            "stlye":"list",
+                            "children":[
+                                "The content on the website's pages is not effectively constructed to engage customers and convey the brand's story. Additionally, the product details provided on the website are insufficient, which hampers the customers' ability to make informed purchasing decisions.",
+                                "The descriptions for each product on the website lack clarity and fail to highlight the unique features and benefits of the items.",
+                                "The messaging regarding food sustainability is not impactful enough. The website fails to effectively communicate how a customer's purchase can contribute to supporting local farmers or reducing food waste."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section":"Research Question",
+            "children":[
+                {
+                    "title":"How might we design an e-commerce site that effectively attracts and educates buyers, fostering motivation to make a purchase and facilitating a connection with the company's sustainability mission?"
+                }
+            ]
+        },
+        {
+            "section":"Research Process",
+            "children":[
+                {
+                    "title":"Heuristic Evaluation",
+                    "image":"heuristic-research.jpeg",
+                    "children":[
+                        "As in the scope of our evaluation, we explored LTG’s e-commerce design performance consisting of:",
+                        {
+                            "style":"list",
+                            "children":[
+                                "Product’s display page",
+                                "Specific product page",
+                                "Checkout page"
+                            ]
+                        },
+                        "We as evaluators go through the interface and inspect the design’s elements by doing desired tasks, comparing the findings with 10 usability heuristics principles, and grading them based on the severity rating."
+                    ],
+                    "reference":{
+                        "title":"All Heuristic broken based on tasks were collected into an Excel file with breakdowns of usability problems, severity ratings, and proposed solutions",
+                        "link":"#"
+                    }
+                },
+                {
+                    "title":"Findings",
+                    "image":"findings.jpeg",
+                    "children":["The category of 'Visibility of system status' has been assigned the highest severity rate, highlighting that these issues are significant concerns and require immediate attention for resolution. The majority of usability problems within this category are specifically identified on the product page."]
+                }
+            ]
+        },
+        {
+            "section":"Research Process",
+            "image":"competitive-analysis.gif",
+            "children":[
+                {
+                    "title":"Competitive Analysis",
+                    "children":["We evaluated LTG in comparison to Vancouver-based competitors Blume, Cartems Donuts, MalaTheBrand, and Vessi to identify current e-commerce design trends. These selected brands are emerging small businesses that prioritize sustainability and operate primarily through e-commerce. We assessed the first impressions, product information, ease of navigation, and the purchasing and shipping processes, with a specific interest in how Blume and Cartems Donuts conveyed the taste of their food products."]
+                },
+                {
+                    "title":"Findings",
+                    "children":["We observed a recurring trend among the competitors, which involves utilizing the mouse hover state to reveal additional information about the products. This interactive feature effectively makes use of the extra white space underneath the product, providing customers with more details. Furthermore, we noted that all of these brands employ FAQ tabs as a resource to address customer concerns and provide helpful information."]
+                }
+            ]
+        },
+        {
+            "section":"Research Process",
+            "children":[
+                {
+                    "title":"Interviews and Cognitive Walkthrough",
+                    "children":[
+                        {
+                            "title":"Participants",
+                            "image":"key-participant-details.jpeg",
+                            "children":[
+                                "We conducted interviews with 2 groups of participants:",
+                                {
+                                    "style":"card",
+                                    "title":"Group 1",
+                                    "children":[
+                                        "Individuals who are unfamiliar with chutney",
+                                        "Goals: The goal is to gain valuable insights from outsiders' perspectives on the website and product, thus, learning how to educate and present the products persuasively to convert them into first-time buyers."
+                                    ]
+                                },
+                                {
+                                    "style":"card",
+                                    "title":"Group 2",
+                                    "children":[
+                                        "Individuals who are familiar with and have tried chutney.",
+                                        "Goals: The aim of this group's interview is to obtain their opinions on purchasing chutney online, identify what differentiates LTG from other brands, and evaluate if the LTG message can convince customers to switch from their regular brand."
+                                    ]
+                                },
+                                "We targeted environmentally conscious individuals who support local products, as they could potentially become clients for LTG. Group 1 has more participants than Group 2 since the focus is on expanding online sales and attracting first-time buyers."
+                            ]
+                        },
+                        {
+                            "title":"Study timeline",
+                            "image":"study-timeline.jpeg",
+                            "children":[]
+                        },
+                        {
+                            "title":"Findings",
+                            "children":[
+                                {
+                                    "style":"card",
+                                    "title":"Hide information from customers",
+                                    "children":[
+                                        "The participants found it confusing when important information such as shipping details and product quantities were missing on the check-out page."
+                                    ]
+                                },
+                                {
+                                    "style":"card",
+                                    "title":"Unnecessary steps to obtain relevant recipes and related items",
+                                    "children":[
+                                        "Poorly designed product descriptions led to participants going through unnecessary processes to obtain information."
+                                    ]
+                                },
+                                {
+                                    "style":"card",
+                                    "title":"Lack of customer support & input",
+                                    "children":[
+                                        "LTG lacks a customer services page, causing participants to be unsure about how to refund or return products."
+                                    ]
+                                },
+                                {
+                                    "style":"card",
+                                    "title":"Unnecessary steps to obtain relevant recipes and related items",
+                                    "children":[
+                                        "Participants lacked awareness about how their purchases could support local farms and contribute to sustainability."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section":"Research Process",
+            "children":[
+            {
+                "prototypes":["flow-1.1.gif","flow-1.2.gif"],
+                "title":"Improving Product Navigation",
+                "children":["Textual-related secondary thumbnails were added that appear on hover, providing a deeper understanding of the products. Additional features such as ratings, tags, 'Quick Add' buttons, and FAQ drop-downs were also included to provide valuable insights and enhance the user experience."]
+            },
+            {
+                "prototypes":["flow-2.1.gif","flow-2.2"],
+                "title":"Enhanced Product Information for Improved Customer Decision-making",
+                "children":["By enhancing the product information with details such as Taste Like, Spicy Level, Allergy Information, Related Products, and Reviews, customers are provided with a more comprehensive understanding of the products they are interested in, enabling them to make informed purchase decisions and supporting their decision-making process."]
+            },
+            {
+                "prototype":"flow-3.gif",
+                "title":"Honor The Action Of The Customers ",
+                "children":["Communicate to customers the impact of their actions on the environment and society, the importance of food sustainability, and how purchasing from local farms can contribute to these goals."]
+            }
+            ]
+        }
+        
+    ]
     },
     {
     "projectId":"0-expgo",
     "title":"ExpGo",
-    "projectIntro":"This is the ExpGo project intro",
+    "projectIntro":"Join tons of exciting experience hosted by the local",
+    "ready":true,
     "repImg":true,
-    "projectDesc":"This is the ExpGo project description"
+    "showProjectTitle":true,
+    "projectDesc":"This is the ExpGo project description",
+    "projectPage":[
+        {
+            "section":"",
+            "children":[
+                {
+                    "title":"Role",
+                    "children":["UX/UI Design"]
+                },
+                {
+                    "title":"Tools",
+                    "children":["Figma", "Miro"]
+                },
+                {
+                    "title":"Duration",
+                    "children":["1 week"]
+                },
+                {
+                    "title":"Platform",
+                    "children":["Mobile"]
+                },
+                {
+                    "title":"Team members",
+                    "children":["Irene Dinh", "Nhi Nguyen"]
+                }
+            ]
+        },
+        {
+            "section":"The Background",
+            "children":[
+                {
+                    "title":"Adobe College + Instagram Creative Jam",
+                    "children":["The Adobe College + Instagram Creative Jam was a competition that brought together student designers from the United States, Canada, Australia, and New Zealand. Each team had a week to develop their submission, which was then evaluated by a panel of professional designers and product managers. Our team, consisting of Nhi and myself, created \"ExpGo,\" which was our final deliverable in the competition. We were thrilled to learn that our submission was selected as one of the top 10 finalists in the competition, with the announcement made in July 2021."]
+                }
+            ]
+        },
+        {
+            "section":"Design Challenge",
+            "children":[
+                {
+                    "title":"A challenge faced by small businesses and freelancers",
+                    "children":["While larger businesses have seemingly unlimited marketing resources at their disposal, small businesses and freelancers often have to work harder to maintain a steady revenue flow. This challenge highlights the need for creative solutions that can help level the playing field for smaller businesses and individuals, allowing them to compete more effectively in a crowded marketplace."]
+                }
+            ]
+        },
+        {
+            "section":"",
+            "children":[
+                {
+                    "title":"How might we design a solution to empower the community to highlight small businesses and/or creators through a platform of discovery?"
+                }
+            ]
+        },
+        {
+            "section":"",
+            "children":[
+                {
+                    "title":"Research Key Findings",
+                    "children":[
+                        "Small businesses experience the struggle to reach their target audience effectively and build strong relationships with their audience and deliver children through their products or services.",
+                        "Small businesses have difficulty reaching new customers and retaining existing ones due to the lack of a strong online presence in today’s digital marketplace."]
+                }
+            ]
+        },
+        {
+            "section":"HMW Reframing",
+            "children":[
+                {
+                    "title":"Adobe College + Instagram Creative Jam",
+                    "children":["How might we create a platform that connects customers with local businesses that share their childrens, making it easier for them to discover and support businesses that align with their beliefs and preferences?"]
+                }
+            ]
+        },
+        {
+            "section":"Ideation",
+            "children":[
+                {
+                    "icon":"fa-solid fa-magnifying-glass",
+                    "style":"card",
+                    "title":"Explore different kinds of online/offline experience",
+                    "children":["Noticing that finding to join a variety of experience is tsill a challenge to customers. To address this, Expo provides a comprehensive discovery tool that users can find their desired experience to join baing on hobbies, locaitons, prefernce and more."]
+                },
+                {
+                    "icon":"fa-solid fa-users",
+                    "title":"A community to share experience",
+                    "style":"card",
+                    "children":["When joining an exciting experience, users will have chance to share their memorable moments online with friend and community. This way would help increase the engagement of the users and promote local businesses at the same time."]
+                },
+                {
+                    "icon":"fa-solid fa-comments",
+                    "style":"card",
+                    "title":"Chat with the host",
+                    "children":["Users can directly contact their host if they have any concerns. This would make users feel more confident and prepare before the event."]
+                }
+            ]
+        },
+        {
+            "section":"Solution",
+            "children":[    
+                {
+                "children":[
+                {
+                    "prototype":"flow-1.gif",
+                    "title":"Leverage to Create Personalized In-App Experiences",
+                    "children":["By incorporating user input regarding hobbies and interests during the onboarding process, ExpGo can personalize the user experience and provide relevant content to each individual. This personalization can significantly enhance user retention and engagement with the application."]
+                },
+                {
+                    "prototype":"flow-2.gif",
+                    "title":"Discovering made easy",
+                    "children":["By incorporating user input regarding hobbies and interests during the onboarding process, ExpGo can personalize the user experience and provide relevant content to each individual. This personalization can significantly enhance user retention and engagement with the application."]
+                },
+                {
+                    "prototype":"flow-3.gif",
+                    "title":"Easily book a session with a few steps",
+                    "children":["By offering comprehensive information, including reviews, host profiles, and contact information, users can make more informed choices about the experiences they are interested in. . This level of transparency and support fosters trust and enhances the overall user experience on the app."]
+                },
+                {
+                    "prototype":"flow-4.gif",
+                    "title":"See what your friends experience and get inspired",
+                    "children":["The feature provides users with the opportunity to discover even more exciting experiences beyond their initial search. By presenting a curated selection of experiences, users can easily find new and interesting options to explore."]
+                },
+                {
+                    "prototype":"flow-5.gif",
+                    "title":"A great way to ease concerns and get ready to experience",
+                    "children":["Users are able to have direct and convenient communication with their host. This real-time communication channel enables users to address any issues, clarify details, or seek additional information, thereby enhancing their overall experience and ensuring a smooth interaction between hosts and users."]
+                }]}
+            ]
+        },
+        {
+            "footer":"Join tons of exciting experience hosted by the local",
+            "footerImage":"high-fi-mockup.jpeg"
+        }
+        
+    ]
     },
     {
     "projectId":"0-pantry-tracker",
     "title":"Pantry Tracker",
     "projectIntro":"This is the Pantry Tracker project intro",
+    "ready":false,
     "repImg":true,
     "projectDesc":"This is the Pantry Tracker project description"
     } 
