@@ -531,12 +531,12 @@
                 "children":["Textual-related secondary thumbnails were added that appear on hover, providing a deeper understanding of the products. Additional features such as ratings, tags, 'Quick Add' buttons, and FAQ drop-downs were also included to provide valuable insights and enhance the user experience."]
             },
             {
-                "prototypes":["flow-2.1.gif","flow-2.2"],
+                "prototypes":["flow-2.1.gif","flow-2.2.png"],
                 "title":"Enhanced Product Information for Improved Customer Decision-making",
                 "children":["By enhancing the product information with details such as Taste Like, Spicy Level, Allergy Information, Related Products, and Reviews, customers are provided with a more comprehensive understanding of the products they are interested in, enabling them to make informed purchase decisions and supporting their decision-making process."]
             },
             {
-                "prototype":"flow-3.gif",
+                "prototypes":["flow-3.gif"],
                 "title":"Honor The Action Of The Customers ",
                 "children":["Communicate to customers the impact of their actions on the environment and society, the importance of food sustainability, and how purchasing from local farms can contribute to these goals."]
             }

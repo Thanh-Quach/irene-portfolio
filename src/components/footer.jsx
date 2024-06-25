@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { Link } from "react-router-dom"
-import { faGlobe } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import { Link } from "react-router-dom"
+// import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer () {
 
@@ -23,9 +23,9 @@ export default function Footer () {
                 <div
                     className="col-lg-6 col-sm-12 me-auto"
                 >   
-                    <div className="text-branding d-flex justify-content-around my-4">
+                    {/* <div className="text-branding d-flex justify-content-around my-4">
                         <Link 
-                            href="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
+                            to="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
                             target="_blank"
                         >
                             <FontAwesomeIcon
@@ -33,7 +33,7 @@ export default function Footer () {
                             />
                         </Link>
                         <Link 
-                            href="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
+                            to="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
                             target="_blank"
                         >
                             <FontAwesomeIcon
@@ -41,14 +41,14 @@ export default function Footer () {
                             />
                         </Link>
                         <Link 
-                            href="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
+                            to="https://www.linkedin.com/in/irene-dinh-8a119b18b/"
                             target="_blank"
                         >
                             <FontAwesomeIcon
                                 icon={faGlobe}    
                             />
                         </Link>
-                    </div>
+                    </div> */}
                     <p className="text-center">© {new Date().getFullYear()} Copyright Thanh Quach. All right reserved.</p>
                 </div>
             </div>

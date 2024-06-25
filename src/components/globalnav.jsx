@@ -1,7 +1,7 @@
 import { Nav, Navbar, Container, Image } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export default function GlobalNav () {
     const navigate = useNavigate();
@@ -35,13 +35,13 @@ export default function GlobalNav () {
                         <Nav.Link eventKey="/about">About</Nav.Link>
                     </Nav.Item>
                 </Nav>
-                <Nav>
+                {/* <Nav>
                     <Nav.Item>
                         <Nav.Link href="https://www.linkedin.com/in/irene-dinh-8a119b18b/">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </Nav.Link>
                     </Nav.Item>
-                </Nav>
+                </Nav> */}
                 </div>
             </Container>
         </Navbar>

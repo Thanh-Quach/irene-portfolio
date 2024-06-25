@@ -41,7 +41,6 @@ export default function Home () {
                                 title={item.title}
                                 projectDesc={item.projectDesc}
                             >
-                                <p>{item.projectIntro}</p>
                             </FeatureCard>
                         </div>
                     )}

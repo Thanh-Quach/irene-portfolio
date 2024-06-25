@@ -107,7 +107,7 @@ export default function Section (props) {
                         <div
                             key={index}
                             className={""+(child.style==="card"?
-                                "shadow rounded-4 col-3 m-2 p-3 border":"")
+                                "shadow rounded-4 col-3 m-2 p-3 border":"row")
                             }
                         >
                             {child.icon&&
@@ -116,7 +116,7 @@ export default function Section (props) {
                             </div>    
                             }
                             <h3 className={child.style==="card"?"text-center m-0":""}>{child.title}</h3>
-                            <div className="my-3">
+                            <div className="my-3 col">
                             {child.children&&child.children.map((child, index)=>
                                     <Child
                                         key={index}
@@ -152,6 +152,13 @@ export default function Section (props) {
                                 />
                             </div>
                             }
+                            {child.prototypes&&
+                            <div className="col-6" key={index}>
+                                {child.prototypes.map((items, index)=>
+                                    <Image className="w-100 mb-3" key={index} src={'./assets/'+projectId+'/'+items}/>
+                                )}
+                            </div>
+                            }
                         </div>
                     )}
                     </div>
@@ -168,7 +175,7 @@ export default function Section (props) {
                         <Image src={'./assets/'+projectId+'/title.jpeg'} className="w-100"/>
                     </div>
                     <div className="text-center my-3"><p>Join tons of exciting experience hosted by the local</p></div>
-                    <div>
+                    <div className="col-xl-4 col-md-6 mx-auto">
                         <Image src={'./assets/'+projectId+'/'+section.footerImage} className="w-100" />
                     </div>
                     </>
